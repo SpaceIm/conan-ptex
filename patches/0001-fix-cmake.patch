@@ -28,10 +28,11 @@
      # Detect the build type from the $FLAVOR environment variable
      # Default to optimized Release builds when unspecified.
      if ("$ENV{FLAVOR}" MATCHES "debug")
-@@ -117,6 +122,4 @@ include_directories(src/ptex)
+@@ -116,7 +121,4 @@ endif ()
+ include_directories(src/ptex)
  
  add_subdirectory(src/ptex)
- add_subdirectory(src/utils)
+-add_subdirectory(src/utils)
 -add_subdirectory(src/tests)
 -add_subdirectory(src/doc)
  add_subdirectory(src/build)

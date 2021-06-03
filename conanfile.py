@@ -81,7 +81,3 @@ class PtexConan(ConanFile):
         if self.settings.os in ["Linux", "FreeBSD"]:
             self.cpp_info.components["_ptex"].system_libs.append("pthread")
         self.cpp_info.components["_ptex"].requires = ["zlib::zlib"]
-
-        bin_path = os.path.join(self.package_folder, "bin")
-        self.output.info("Appending PATH environment variable: {}".format(bin_path))
-        self.env_info.PATH.append(bin_path)
